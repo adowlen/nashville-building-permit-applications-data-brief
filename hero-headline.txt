@@ -1,0 +1,4 @@
+Headline: 330 days
+Sub: median age of the 6,036 Nashville building permit applications still unissued on 2026-11-03 - against a 29-day median completed wait among permits issued in the last three years
+Source line: Machine Readable - Nashville Building Permit Applications layer, pulled 2026-11-03 - pending stock only
+Story the art tells: a permits counter at dusk stacked with application folders, the tallest stack topped by one curled, aged folder, a wall calendar with its pages torn away, and the storefronts and houses the applications are for waiting dark outside the window. The queue is the story: thousands of applications, half of them more than a year old.

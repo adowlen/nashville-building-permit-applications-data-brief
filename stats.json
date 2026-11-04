@@ -1,0 +1,1319 @@
+{
+  "dataset": "Nashville Building Permit Applications (Building_Permit_Applications_Feature_Layer_view layer 0)",
+  "snapshot_date": "2026-11-03",
+  "as_of_date": "2026-11-03",
+  "rows": 6036,
+  "unit": "one row = one building permit application that has NOT been issued (metadata v2.0, 2023-06-05); issued building permits and trade applications are NOT in this dataset; the layer carries no status field, so it does not record whether an application is in review, awaiting the applicant, or no longer being pursued",
+  "coverage": {
+    "date_entered_min": "2023-10-30",
+    "date_entered_max": "2026-11-02",
+    "window_rule": "rolling three years per source metadata; observed entries run 2023-10-30 to 2026-11-02, so no application entered before 2023-10-30 is observable and no pending age above 1,100 days can appear",
+    "rows_at_window_edge_2023_10_30": 16,
+    "rows_entered_before_2023_11_03": 24
+  },
+  "age_all": {
+    "n_permits": 6036,
+    "median_days": 330.0,
+    "mean_days": 417.0,
+    "p90_days": 951.0,
+    "max_days": 1100,
+    "over_365_share": 0.4747,
+    "over_730_share": 0.2442,
+    "over_365_count": 2865,
+    "over_730_count": 1474,
+    "over_180_count": 3947,
+    "over_90_count": 4640,
+    "within_30_count": 580
+  },
+  "age_distribution": [
+    {
+      "bucket": "0-30 days",
+      "permits": 580,
+      "share_of_pending": 0.0961
+    },
+    {
+      "bucket": "31-90 days",
+      "permits": 816,
+      "share_of_pending": 0.1352
+    },
+    {
+      "bucket": "91-180 days",
+      "permits": 693,
+      "share_of_pending": 0.1148
+    },
+    {
+      "bucket": "181-365 days",
+      "permits": 1082,
+      "share_of_pending": 0.1793
+    },
+    {
+      "bucket": "366-730 days",
+      "permits": 1391,
+      "share_of_pending": 0.2305
+    },
+    {
+      "bucket": "over 730 days",
+      "permits": 1474,
+      "share_of_pending": 0.2442
+    }
+  ],
+  "age_by_type": {
+    "Building Residential - New": {
+      "n_permits": 1945,
+      "median_days": 443.0,
+      "mean_days": 468.8,
+      "p90_days": 986.0,
+      "max_days": 1100,
+      "over_365_share": 0.5445,
+      "over_730_share": 0.2997
+    },
+    "Building Commercial - Rehab": {
+      "n_permits": 822,
+      "median_days": 173.0,
+      "mean_days": 275.7,
+      "p90_days": 790.8,
+      "max_days": 1099,
+      "over_365_share": 0.2822,
+      "over_730_share": 0.1168
+    },
+    "Building Commercial - New": {
+      "n_permits": 650,
+      "median_days": 335.0,
+      "mean_days": 422.5,
+      "p90_days": 939.6000000000001,
+      "max_days": 1099,
+      "over_365_share": 0.4554,
+      "over_730_share": 0.2677
+    },
+    "Building Residential - Addition": {
+      "n_permits": 567,
+      "median_days": 453.0,
+      "mean_days": 479.6,
+      "p90_days": 968.8000000000001,
+      "max_days": 1100,
+      "over_365_share": 0.5714,
+      "over_730_share": 0.3139
+    },
+    "Building Commercial - Tenant Finish Out": {
+      "n_permits": 468,
+      "median_days": 201.0,
+      "mean_days": 288.3,
+      "p90_days": 845.3,
+      "max_days": 1028,
+      "over_365_share": 0.2799,
+      "over_730_share": 0.1197
+    },
+    "Building Demolition Permit": {
+      "n_permits": 441,
+      "median_days": 391.0,
+      "mean_days": 450.6,
+      "p90_days": 957.0,
+      "max_days": 1100,
+      "over_365_share": 0.5193,
+      "over_730_share": 0.2608
+    },
+    "Building Residential - Rehab": {
+      "n_permits": 396,
+      "median_days": 498.0,
+      "mean_days": 513.5,
+      "p90_days": 981.0,
+      "max_days": 1100,
+      "over_365_share": 0.6237,
+      "over_730_share": 0.3081
+    },
+    "Building Use & Occupancy": {
+      "n_permits": 188,
+      "median_days": 460.5,
+      "mean_days": 483.1,
+      "p90_days": 933.4000000000001,
+      "max_days": 1069,
+      "over_365_share": 0.5798,
+      "over_730_share": 0.2872
+    },
+    "Building Commercial - Addition": {
+      "n_permits": 87,
+      "median_days": 276.0,
+      "mean_days": 401.2,
+      "p90_days": 951.0,
+      "max_days": 1086,
+      "over_365_share": 0.4598,
+      "over_730_share": 0.2414
+    },
+    "Building Sign Permit": {
+      "n_permits": 82,
+      "median_days": 518.0,
+      "mean_days": 483.3,
+      "p90_days": 810.5000000000001,
+      "max_days": 1061,
+      "over_365_share": 0.7073,
+      "over_730_share": 0.2317
+    },
+    "Building Commercial - Shell": {
+      "n_permits": 59,
+      "median_days": 183.0,
+      "mean_days": 343.9,
+      "p90_days": 1026.6,
+      "max_days": 1083,
+      "over_365_share": 0.322,
+      "over_730_share": 0.1864
+    },
+    "Building Commercial - Roofing / Siding": {
+      "n_permits": 51,
+      "median_days": 195.0,
+      "mean_days": 294.4,
+      "p90_days": 631.0,
+      "max_days": 956,
+      "over_365_share": 0.2353,
+      "over_730_share": 0.098
+    },
+    "Building Residential - Roofing / Siding": {
+      "n_permits": 49,
+      "median_days": 270.0,
+      "mean_days": 363.6,
+      "p90_days": 788.6000000000001,
+      "max_days": 1089,
+      "over_365_share": 0.4694,
+      "over_730_share": 0.1224
+    },
+    "Building Commercial - Amend Permit": {
+      "n_permits": 47,
+      "median_days": 90.0,
+      "mean_days": 150.9,
+      "p90_days": 391.9999999999999,
+      "max_days": 650,
+      "over_365_share": 0.1064,
+      "over_730_share": 0.0
+    },
+    "Building Residential - Tenant Finish Out": {
+      "n_permits": 34,
+      "median_days": 509.0,
+      "mean_days": 686.6,
+      "p90_days": 973.0,
+      "max_days": 981,
+      "over_365_share": 1.0,
+      "over_730_share": 0.3824
+    },
+    "Building Commercial - Change Contractor": {
+      "n_permits": 31,
+      "median_days": 106.0,
+      "mean_days": 162.2,
+      "p90_days": 335.0,
+      "max_days": 886,
+      "over_365_share": 0.0968,
+      "over_730_share": 0.0323
+    },
+    "Building Commercial - Fire Damage": {
+      "n_permits": 26,
+      "median_days": 112.0,
+      "mean_days": 180.1,
+      "p90_days": 432.5,
+      "max_days": 439,
+      "over_365_share": 0.2308,
+      "over_730_share": 0.0
+    },
+    "Building Tree Removal Permit": {
+      "n_permits": 23,
+      "median_days": 258.0,
+      "mean_days": 394.4,
+      "p90_days": 899.8000000000001,
+      "max_days": 980,
+      "over_365_share": 0.4348,
+      "over_730_share": 0.2174
+    },
+    "Building Residential - Amend Permit": {
+      "n_permits": 17,
+      "median_days": 293.0,
+      "mean_days": 397.6,
+      "p90_days": 855.6,
+      "max_days": 894,
+      "over_365_share": 0.4706,
+      "over_730_share": 0.1765
+    },
+    "Building Commercial - Foundation": {
+      "n_permits": 10,
+      "median_days": 166.5,
+      "mean_days": 158.3,
+      "p90_days": 257.4,
+      "max_days": 333,
+      "over_365_share": 0.0,
+      "over_730_share": 0.0
+    },
+    "Building Commercial - Structural Frame": {
+      "n_permits": 8,
+      "median_days": 66.0,
+      "mean_days": 196.4,
+      "p90_days": 525.4,
+      "max_days": 776,
+      "over_365_share": 0.25,
+      "over_730_share": 0.125
+    },
+    "Building Residential Rehab Storm Damage": {
+      "n_permits": 7,
+      "median_days": 217.0,
+      "mean_days": 392.0,
+      "p90_days": 1030.0,
+      "max_days": 1072,
+      "over_365_share": 0.2857,
+      "over_730_share": 0.2857
+    },
+    "Building Residential - Change Contractor": {
+      "n_permits": 6,
+      "median_days": 684.0,
+      "mean_days": 745.5,
+      "p90_days": 938.5,
+      "max_days": 959,
+      "over_365_share": 1.0,
+      "over_730_share": 0.3333
+    },
+    "Building Residential - Foundation": {
+      "n_permits": 6,
+      "median_days": 105.0,
+      "mean_days": 181.7,
+      "p90_days": 391.5,
+      "max_days": 658,
+      "over_365_share": 0.1667,
+      "over_730_share": 0.0
+    },
+    "Building Demolition Storm Damage": {
+      "n_permits": 5,
+      "median_days": 1048.0,
+      "mean_days": 1012.4,
+      "p90_days": 1053.2,
+      "max_days": 1056,
+      "over_365_share": 1.0,
+      "over_730_share": 1.0
+    },
+    "Building Residential New Storm Damage": {
+      "n_permits": 5,
+      "median_days": 252.0,
+      "mean_days": 359.4,
+      "p90_days": 681.0,
+      "max_days": 967,
+      "over_365_share": 0.2,
+      "over_730_share": 0.2
+    },
+    "Building Residential - Fire Damage": {
+      "n_permits": 4,
+      "median_days": 404.0,
+      "mean_days": 377.2,
+      "p90_days": 692.7,
+      "max_days": 693,
+      "over_365_share": 0.5,
+      "over_730_share": 0.0
+    },
+    "Building Blasting Permit": {
+      "n_permits": 1,
+      "median_days": 6.0,
+      "mean_days": 6.0,
+      "p90_days": 6.0,
+      "max_days": 6,
+      "over_365_share": 0.0,
+      "over_730_share": 0.0
+    },
+    "Building Moving Permit": {
+      "n_permits": 1,
+      "median_days": 950.0,
+      "mean_days": 950.0,
+      "p90_days": 950.0,
+      "max_days": 950,
+      "over_365_share": 1.0,
+      "over_730_share": 1.0
+    }
+  },
+  "type_counts_all_rows": {
+    "Building Residential - New": 1945,
+    "Building Commercial - Rehab": 822,
+    "Building Commercial - New": 650,
+    "Building Residential - Addition": 567,
+    "Building Commercial - Tenant Finish Out": 468,
+    "Building Demolition Permit": 441,
+    "Building Residential - Rehab": 396,
+    "Building Use & Occupancy": 188,
+    "Building Commercial - Addition": 87,
+    "Building Sign Permit": 82,
+    "Building Commercial - Shell": 59,
+    "Building Commercial - Roofing / Siding": 51,
+    "Building Residential - Roofing / Siding": 49,
+    "Building Commercial - Amend Permit": 47,
+    "Building Residential - Tenant Finish Out": 34,
+    "Building Commercial - Change Contractor": 31,
+    "Building Commercial - Fire Damage": 26,
+    "Building Tree Removal Permit": 23,
+    "Building Residential - Amend Permit": 17,
+    "Building Commercial - Foundation": 10,
+    "Building Commercial - Structural Frame": 8,
+    "Building Residential Rehab Storm Damage": 7,
+    "Building Residential - Change Contractor": 6,
+    "Building Residential - Foundation": 6,
+    "Building Demolition Storm Damage": 5,
+    "Building Residential New Storm Damage": 5,
+    "Building Residential - Fire Damage": 4,
+    "Building Moving Permit": 1,
+    "Building Blasting Permit": 1
+  },
+  "types_only_in_pending": [
+    "Building Blasting Permit",
+    "Building Residential - Tenant Finish Out"
+  ],
+  "types_only_in_issued": [
+    "Building Commercial New Storm Damage",
+    "Building Commercial Rehab Storm Damage"
+  ],
+  "cost": {
+    "definition": "stated value of construction (applicant-stated, per metadata), computed only on rows with a recorded positive value",
+    "rows_with_stated_value": 3910,
+    "rows_zero_value": 2125,
+    "rows_null_value": 1,
+    "not_stated_rows": 2126,
+    "not_stated_share": 0.3522,
+    "total_stated": 1896350756.0,
+    "median_stated": 150393.5,
+    "mean_stated": 485000.0,
+    "max_stated": 150000000.0,
+    "min_positive": 1.0
+  },
+  "geography": {
+    "council_district": {
+      "known_rows": 6033,
+      "unknown_rows": 3,
+      "unknown_composition": "3 rows null; no district-0 sentinel rows exist in this layer (asserted)",
+      "top_district_by_stated": {
+        "district": 19,
+        "stated_total": 384826611.0,
+        "share_of_all_stated": 0.2029
+      },
+      "by_district_sorted_by_pending_count": [
+        {
+          "district": 2,
+          "permits": 480,
+          "median_age_days": 715.0,
+          "stated_total": 133861913.0,
+          "stated_rows": 384
+        },
+        {
+          "district": 5,
+          "permits": 464,
+          "median_age_days": 272.0,
+          "stated_total": 73276657.0,
+          "stated_rows": 271
+        },
+        {
+          "district": 19,
+          "permits": 424,
+          "median_age_days": 330.0,
+          "stated_total": 384826611.0,
+          "stated_rows": 178
+        },
+        {
+          "district": 17,
+          "permits": 379,
+          "median_age_days": 257.0,
+          "stated_total": 158249463.0,
+          "stated_rows": 239
+        },
+        {
+          "district": 20,
+          "permits": 330,
+          "median_age_days": 139.0,
+          "stated_total": 125703802.0,
+          "stated_rows": 248
+        },
+        {
+          "district": 6,
+          "permits": 313,
+          "median_age_days": 515.0,
+          "stated_total": 35226140.0,
+          "stated_rows": 174
+        },
+        {
+          "district": 21,
+          "permits": 299,
+          "median_age_days": 621.0,
+          "stated_total": 80859364.0,
+          "stated_rows": 217
+        },
+        {
+          "district": 24,
+          "permits": 239,
+          "median_age_days": 344.0,
+          "stated_total": 80921407.0,
+          "stated_rows": 171
+        },
+        {
+          "district": 16,
+          "permits": 181,
+          "median_age_days": 335.0,
+          "stated_total": 16678342.0,
+          "stated_rows": 88
+        },
+        {
+          "district": 7,
+          "permits": 177,
+          "median_age_days": 267.0,
+          "stated_total": 26636648.0,
+          "stated_rows": 129
+        },
+        {
+          "district": 25,
+          "permits": 169,
+          "median_age_days": 454.0,
+          "stated_total": 51023909.0,
+          "stated_rows": 131
+        },
+        {
+          "district": 15,
+          "permits": 168,
+          "median_age_days": 327.5,
+          "stated_total": 41151748.0,
+          "stated_rows": 94
+        },
+        {
+          "district": 18,
+          "permits": 165,
+          "median_age_days": 271.0,
+          "stated_total": 39409288.0,
+          "stated_rows": 117
+        },
+        {
+          "district": 9,
+          "permits": 161,
+          "median_age_days": 231.0,
+          "stated_total": 23352940.0,
+          "stated_rows": 94
+        },
+        {
+          "district": 23,
+          "permits": 158,
+          "median_age_days": 195.0,
+          "stated_total": 49850856.0,
+          "stated_rows": 118
+        },
+        {
+          "district": 34,
+          "permits": 150,
+          "median_age_days": 339.0,
+          "stated_total": 30753790.0,
+          "stated_rows": 111
+        },
+        {
+          "district": 1,
+          "permits": 147,
+          "median_age_days": 431.0,
+          "stated_total": 16849983.0,
+          "stated_rows": 103
+        },
+        {
+          "district": 26,
+          "permits": 135,
+          "median_age_days": 257.0,
+          "stated_total": 10953569.0,
+          "stated_rows": 79
+        },
+        {
+          "district": 13,
+          "permits": 129,
+          "median_age_days": 84.0,
+          "stated_total": 184484262.0,
+          "stated_rows": 77
+        },
+        {
+          "district": 11,
+          "permits": 128,
+          "median_age_days": 405.0,
+          "stated_total": 19714799.0,
+          "stated_rows": 75
+        },
+        {
+          "district": 10,
+          "permits": 128,
+          "median_age_days": 265.5,
+          "stated_total": 31870571.0,
+          "stated_rows": 89
+        },
+        {
+          "district": 28,
+          "permits": 120,
+          "median_age_days": 232.0,
+          "stated_total": 20160953.0,
+          "stated_rows": 56
+        },
+        {
+          "district": 35,
+          "permits": 117,
+          "median_age_days": 372.0,
+          "stated_total": 32666891.0,
+          "stated_rows": 92
+        },
+        {
+          "district": 3,
+          "permits": 110,
+          "median_age_days": 408.0,
+          "stated_total": 38401576.0,
+          "stated_rows": 75
+        },
+        {
+          "district": 32,
+          "permits": 84,
+          "median_age_days": 267.0,
+          "stated_total": 37256931.0,
+          "stated_rows": 40
+        },
+        {
+          "district": 29,
+          "permits": 83,
+          "median_age_days": 193.0,
+          "stated_total": 13582345.0,
+          "stated_rows": 56
+        },
+        {
+          "district": 12,
+          "permits": 77,
+          "median_age_days": 330.0,
+          "stated_total": 25825826.0,
+          "stated_rows": 63
+        },
+        {
+          "district": 27,
+          "permits": 77,
+          "median_age_days": 319.0,
+          "stated_total": 6434396.0,
+          "stated_rows": 49
+        },
+        {
+          "district": 8,
+          "permits": 76,
+          "median_age_days": 294.0,
+          "stated_total": 15211105.0,
+          "stated_rows": 55
+        },
+        {
+          "district": 22,
+          "permits": 75,
+          "median_age_days": 252.0,
+          "stated_total": 19947021.0,
+          "stated_rows": 44
+        },
+        {
+          "district": 14,
+          "permits": 71,
+          "median_age_days": 187.0,
+          "stated_total": 26996186.0,
+          "stated_rows": 36
+        },
+        {
+          "district": 33,
+          "permits": 69,
+          "median_age_days": 349.0,
+          "stated_total": 19536260.0,
+          "stated_rows": 53
+        },
+        {
+          "district": 4,
+          "permits": 60,
+          "median_age_days": 276.0,
+          "stated_total": 15746895.0,
+          "stated_rows": 47
+        },
+        {
+          "district": 31,
+          "permits": 47,
+          "median_age_days": 328.0,
+          "stated_total": 6806043.0,
+          "stated_rows": 32
+        },
+        {
+          "district": 30,
+          "permits": 43,
+          "median_age_days": 328.0,
+          "stated_total": 1672266.0,
+          "stated_rows": 23
+        }
+      ]
+    },
+    "zip_top10_by_pending": [
+      {
+        "zip": "37207",
+        "permits": 718,
+        "median_age_days": 322.0
+      },
+      {
+        "zip": "37209",
+        "permits": 541,
+        "median_age_days": 411.0
+      },
+      {
+        "zip": "37203",
+        "permits": 497,
+        "median_age_days": 126.0
+      },
+      {
+        "zip": "37211",
+        "permits": 406,
+        "median_age_days": 315.0
+      },
+      {
+        "zip": "37206",
+        "permits": 385,
+        "median_age_days": 515.0
+      },
+      {
+        "zip": "37013",
+        "permits": 296,
+        "median_age_days": 294.0
+      },
+      {
+        "zip": "37115",
+        "permits": 294,
+        "median_age_days": 224.0
+      },
+      {
+        "zip": "37208",
+        "permits": 247,
+        "median_age_days": 474.0
+      },
+      {
+        "zip": "37214",
+        "permits": 227,
+        "median_age_days": 216.0
+      },
+      {
+        "zip": "37215",
+        "permits": 224,
+        "median_age_days": 433.5
+      }
+    ],
+    "coords": "Lat/Lon present on 100% of rows, no 0,0 sentinel, all inside Nashville-Davidson bbox",
+    "census_tract": "this layer serves no census tract field (the issued layer does); no tract figure is computed"
+  },
+  "cohort_resolution": {
+    "basis": "applications entered in a period and observable in either layer on 2026-11-03: issued (companion issued layer, same-day pull) or still pending (this layer). Applications closed without issuance and removed from the pending extract would appear in neither layer; the metadata does not describe such removals",
+    "by_entry_year": [
+      {
+        "period": "2020",
+        "issued": 1,
+        "pending": 0,
+        "observed_total": 1,
+        "pending_share": 0.0
+      },
+      {
+        "period": "2021",
+        "issued": 14,
+        "pending": 0,
+        "observed_total": 14,
+        "pending_share": 0.0
+      },
+      {
+        "period": "2022",
+        "issued": 165,
+        "pending": 0,
+        "observed_total": 165,
+        "pending_share": 0.0
+      },
+      {
+        "period": "2023",
+        "issued": 2865,
+        "pending": 200,
+        "observed_total": 3065,
+        "pending_share": 0.0653
+      },
+      {
+        "period": "2024",
+        "issued": 9560,
+        "pending": 1405,
+        "observed_total": 10965,
+        "pending_share": 0.1281
+      },
+      {
+        "period": "2025",
+        "issued": 10166,
+        "pending": 1523,
+        "observed_total": 11689,
+        "pending_share": 0.1303
+      },
+      {
+        "period": "2026",
+        "issued": 6880,
+        "pending": 2908,
+        "observed_total": 9788,
+        "pending_share": 0.2971
+      }
+    ],
+    "by_entry_quarter": [
+      {
+        "period": "2020Q2",
+        "issued": 1,
+        "pending": 0,
+        "observed_total": 1,
+        "pending_share": 0.0
+      },
+      {
+        "period": "2021Q2",
+        "issued": 5,
+        "pending": 0,
+        "observed_total": 5,
+        "pending_share": 0.0
+      },
+      {
+        "period": "2021Q3",
+        "issued": 4,
+        "pending": 0,
+        "observed_total": 4,
+        "pending_share": 0.0
+      },
+      {
+        "period": "2021Q4",
+        "issued": 5,
+        "pending": 0,
+        "observed_total": 5,
+        "pending_share": 0.0
+      },
+      {
+        "period": "2022Q1",
+        "issued": 9,
+        "pending": 0,
+        "observed_total": 9,
+        "pending_share": 0.0
+      },
+      {
+        "period": "2022Q2",
+        "issued": 23,
+        "pending": 0,
+        "observed_total": 23,
+        "pending_share": 0.0
+      },
+      {
+        "period": "2022Q3",
+        "issued": 67,
+        "pending": 0,
+        "observed_total": 67,
+        "pending_share": 0.0
+      },
+      {
+        "period": "2022Q4",
+        "issued": 66,
+        "pending": 0,
+        "observed_total": 66,
+        "pending_share": 0.0
+      },
+      {
+        "period": "2023Q1",
+        "issued": 110,
+        "pending": 0,
+        "observed_total": 110,
+        "pending_share": 0.0
+      },
+      {
+        "period": "2023Q2",
+        "issued": 269,
+        "pending": 0,
+        "observed_total": 269,
+        "pending_share": 0.0
+      },
+      {
+        "period": "2023Q3",
+        "issued": 669,
+        "pending": 0,
+        "observed_total": 669,
+        "pending_share": 0.0
+      },
+      {
+        "period": "2023Q4",
+        "issued": 1817,
+        "pending": 200,
+        "observed_total": 2017,
+        "pending_share": 0.0992
+      },
+      {
+        "period": "2024Q1",
+        "issued": 2266,
+        "pending": 421,
+        "observed_total": 2687,
+        "pending_share": 0.1567
+      },
+      {
+        "period": "2024Q2",
+        "issued": 2654,
+        "pending": 403,
+        "observed_total": 3057,
+        "pending_share": 0.1318
+      },
+      {
+        "period": "2024Q3",
+        "issued": 2422,
+        "pending": 352,
+        "observed_total": 2774,
+        "pending_share": 0.1269
+      },
+      {
+        "period": "2024Q4",
+        "issued": 2218,
+        "pending": 229,
+        "observed_total": 2447,
+        "pending_share": 0.0936
+      },
+      {
+        "period": "2025Q1",
+        "issued": 2364,
+        "pending": 323,
+        "observed_total": 2687,
+        "pending_share": 0.1202
+      },
+      {
+        "period": "2025Q2",
+        "issued": 2666,
+        "pending": 409,
+        "observed_total": 3075,
+        "pending_share": 0.133
+      },
+      {
+        "period": "2025Q3",
+        "issued": 2814,
+        "pending": 383,
+        "observed_total": 3197,
+        "pending_share": 0.1198
+      },
+      {
+        "period": "2025Q4",
+        "issued": 2322,
+        "pending": 408,
+        "observed_total": 2730,
+        "pending_share": 0.1495
+      },
+      {
+        "period": "2026Q1",
+        "issued": 2206,
+        "pending": 577,
+        "observed_total": 2783,
+        "pending_share": 0.2073
+      },
+      {
+        "period": "2026Q2",
+        "issued": 2397,
+        "pending": 625,
+        "observed_total": 3022,
+        "pending_share": 0.2068
+      },
+      {
+        "period": "2026Q3",
+        "issued": 1989,
+        "pending": 1057,
+        "observed_total": 3046,
+        "pending_share": 0.347
+      },
+      {
+        "period": "2026Q4",
+        "issued": 288,
+        "pending": 649,
+        "observed_total": 937,
+        "pending_share": 0.6926
+      }
+    ],
+    "mature_cohorts_2024_2025": {
+      "entry_years": "2024-2025",
+      "pending": 2928,
+      "issued": 19726,
+      "observed_total": 22654,
+      "pending_share": 0.1292
+    },
+    "class_residual_2024_2025_min100": [
+      {
+        "permit_type": "Building Commercial - New",
+        "pending": 336,
+        "issued": 569,
+        "observed_total": 905,
+        "pending_share": 0.3713
+      },
+      {
+        "permit_type": "Building Use & Occupancy",
+        "pending": 114,
+        "issued": 260,
+        "observed_total": 374,
+        "pending_share": 0.3048
+      },
+      {
+        "permit_type": "Building Commercial - Addition",
+        "pending": 41,
+        "issued": 158,
+        "observed_total": 199,
+        "pending_share": 0.206
+      },
+      {
+        "permit_type": "Building Commercial - Shell",
+        "pending": 21,
+        "issued": 88,
+        "observed_total": 109,
+        "pending_share": 0.1927
+      },
+      {
+        "permit_type": "Building Residential - Roofing / Siding",
+        "pending": 22,
+        "issued": 103,
+        "observed_total": 125,
+        "pending_share": 0.176
+      },
+      {
+        "permit_type": "Building Demolition Permit",
+        "pending": 235,
+        "issued": 1436,
+        "observed_total": 1671,
+        "pending_share": 0.1406
+      },
+      {
+        "permit_type": "Building Residential - Rehab",
+        "pending": 239,
+        "issued": 1510,
+        "observed_total": 1749,
+        "pending_share": 0.1366
+      },
+      {
+        "permit_type": "Building Residential - Addition",
+        "pending": 315,
+        "issued": 2061,
+        "observed_total": 2376,
+        "pending_share": 0.1326
+      },
+      {
+        "permit_type": "Building Residential - New",
+        "pending": 1052,
+        "issued": 7338,
+        "observed_total": 8390,
+        "pending_share": 0.1254
+      },
+      {
+        "permit_type": "Building Commercial - Tenant Finish Out",
+        "pending": 133,
+        "issued": 1036,
+        "observed_total": 1169,
+        "pending_share": 0.1138
+      },
+      {
+        "permit_type": "Building Commercial - Rehab",
+        "pending": 255,
+        "issued": 2493,
+        "observed_total": 2748,
+        "pending_share": 0.0928
+      },
+      {
+        "permit_type": "Building Commercial - Roofing / Siding",
+        "pending": 17,
+        "issued": 272,
+        "observed_total": 289,
+        "pending_share": 0.0588
+      },
+      {
+        "permit_type": "Building Tree Removal Permit",
+        "pending": 11,
+        "issued": 218,
+        "observed_total": 229,
+        "pending_share": 0.048
+      },
+      {
+        "permit_type": "Building Sign Permit",
+        "pending": 60,
+        "issued": 1494,
+        "observed_total": 1554,
+        "pending_share": 0.0386
+      },
+      {
+        "permit_type": "Building Commercial - Change Contractor",
+        "pending": 4,
+        "issued": 140,
+        "observed_total": 144,
+        "pending_share": 0.0278
+      },
+      {
+        "permit_type": "Building Residential - Change Contractor",
+        "pending": 6,
+        "issued": 276,
+        "observed_total": 282,
+        "pending_share": 0.0213
+      }
+    ]
+  },
+  "mix_comparison": [
+    {
+      "permit_type": "Building Residential - New",
+      "pending_n": 1945,
+      "issued_n": 10954,
+      "pending_share": 0.3222,
+      "issued_share": 0.3694
+    },
+    {
+      "permit_type": "Building Commercial - Rehab",
+      "pending_n": 822,
+      "issued_n": 3793,
+      "pending_share": 0.1362,
+      "issued_share": 0.1279
+    },
+    {
+      "permit_type": "Building Commercial - New",
+      "pending_n": 650,
+      "issued_n": 864,
+      "pending_share": 0.1077,
+      "issued_share": 0.0291
+    },
+    {
+      "permit_type": "Building Residential - Addition",
+      "pending_n": 567,
+      "issued_n": 3167,
+      "pending_share": 0.0939,
+      "issued_share": 0.1068
+    },
+    {
+      "permit_type": "Building Commercial - Tenant Finish Out",
+      "pending_n": 468,
+      "issued_n": 1573,
+      "pending_share": 0.0775,
+      "issued_share": 0.0531
+    },
+    {
+      "permit_type": "Building Demolition Permit",
+      "pending_n": 441,
+      "issued_n": 2171,
+      "pending_share": 0.0731,
+      "issued_share": 0.0732
+    },
+    {
+      "permit_type": "Building Residential - Rehab",
+      "pending_n": 396,
+      "issued_n": 2430,
+      "pending_share": 0.0656,
+      "issued_share": 0.082
+    },
+    {
+      "permit_type": "Building Use & Occupancy",
+      "pending_n": 188,
+      "issued_n": 389,
+      "pending_share": 0.0311,
+      "issued_share": 0.0131
+    },
+    {
+      "permit_type": "Building Commercial - Addition",
+      "pending_n": 87,
+      "issued_n": 257,
+      "pending_share": 0.0144,
+      "issued_share": 0.0087
+    },
+    {
+      "permit_type": "Building Sign Permit",
+      "pending_n": 82,
+      "issued_n": 1989,
+      "pending_share": 0.0136,
+      "issued_share": 0.0671
+    },
+    {
+      "permit_type": "Building Commercial - Shell",
+      "pending_n": 59,
+      "issued_n": 149,
+      "pending_share": 0.0098,
+      "issued_share": 0.005
+    },
+    {
+      "permit_type": "Building Commercial - Roofing / Siding",
+      "pending_n": 51,
+      "issued_n": 334,
+      "pending_share": 0.0084,
+      "issued_share": 0.0113
+    },
+    {
+      "permit_type": "Building Residential - Roofing / Siding",
+      "pending_n": 49,
+      "issued_n": 186,
+      "pending_share": 0.0081,
+      "issued_share": 0.0063
+    },
+    {
+      "permit_type": "Building Commercial - Amend Permit",
+      "pending_n": 47,
+      "issued_n": 132,
+      "pending_share": 0.0078,
+      "issued_share": 0.0045
+    },
+    {
+      "permit_type": "Building Residential - Tenant Finish Out",
+      "pending_n": 34,
+      "issued_n": 0,
+      "pending_share": 0.0056,
+      "issued_share": 0.0
+    },
+    {
+      "permit_type": "Building Commercial - Change Contractor",
+      "pending_n": 31,
+      "issued_n": 183,
+      "pending_share": 0.0051,
+      "issued_share": 0.0062
+    },
+    {
+      "permit_type": "Building Commercial - Fire Damage",
+      "pending_n": 26,
+      "issued_n": 38,
+      "pending_share": 0.0043,
+      "issued_share": 0.0013
+    },
+    {
+      "permit_type": "Building Tree Removal Permit",
+      "pending_n": 23,
+      "issued_n": 325,
+      "pending_share": 0.0038,
+      "issued_share": 0.011
+    },
+    {
+      "permit_type": "Building Residential - Amend Permit",
+      "pending_n": 17,
+      "issued_n": 94,
+      "pending_share": 0.0028,
+      "issued_share": 0.0032
+    },
+    {
+      "permit_type": "Building Commercial - Foundation",
+      "pending_n": 10,
+      "issued_n": 56,
+      "pending_share": 0.0017,
+      "issued_share": 0.0019
+    },
+    {
+      "permit_type": "Building Commercial - Structural Frame",
+      "pending_n": 8,
+      "issued_n": 20,
+      "pending_share": 0.0013,
+      "issued_share": 0.0007
+    },
+    {
+      "permit_type": "Building Residential Rehab Storm Damage",
+      "pending_n": 7,
+      "issued_n": 49,
+      "pending_share": 0.0012,
+      "issued_share": 0.0017
+    },
+    {
+      "permit_type": "Building Residential - Change Contractor",
+      "pending_n": 6,
+      "issued_n": 409,
+      "pending_share": 0.001,
+      "issued_share": 0.0138
+    },
+    {
+      "permit_type": "Building Residential - Foundation",
+      "pending_n": 6,
+      "issued_n": 8,
+      "pending_share": 0.001,
+      "issued_share": 0.0003
+    },
+    {
+      "permit_type": "Building Demolition Storm Damage",
+      "pending_n": 5,
+      "issued_n": 8,
+      "pending_share": 0.0008,
+      "issued_share": 0.0003
+    },
+    {
+      "permit_type": "Building Residential New Storm Damage",
+      "pending_n": 5,
+      "issued_n": 22,
+      "pending_share": 0.0008,
+      "issued_share": 0.0007
+    },
+    {
+      "permit_type": "Building Residential - Fire Damage",
+      "pending_n": 4,
+      "issued_n": 33,
+      "pending_share": 0.0007,
+      "issued_share": 0.0011
+    },
+    {
+      "permit_type": "Building Blasting Permit",
+      "pending_n": 1,
+      "issued_n": 0,
+      "pending_share": 0.0002,
+      "issued_share": 0.0
+    },
+    {
+      "permit_type": "Building Moving Permit",
+      "pending_n": 1,
+      "issued_n": 3,
+      "pending_share": 0.0002,
+      "issued_share": 0.0001
+    },
+    {
+      "permit_type": "Building Commercial New Storm Damage",
+      "pending_n": 0,
+      "issued_n": 4,
+      "pending_share": 0.0,
+      "issued_share": 0.0001
+    },
+    {
+      "permit_type": "Building Commercial Rehab Storm Damage",
+      "pending_n": 0,
+      "issued_n": 11,
+      "pending_share": 0.0,
+      "issued_share": 0.0004
+    }
+  ],
+  "cross_layer_controls": {
+    "date_issued_null_rows": 6036,
+    "permit_numbers_in_both_layers": 0,
+    "issued_rows_same_day_pull": 29651
+  },
+  "duplicates": {
+    "permit_number_duplicate_rows": 10,
+    "unique_permit_numbers": 6026,
+    "unique_parcels": 4620,
+    "note": "rows sharing a permit number are multi-parcel or multi-unit filings under one number (the same pattern as the issued layer); rows are the unit throughout"
+  },
+  "entered_by_year": {
+    "2023": 200,
+    "2024": 1405,
+    "2025": 1523,
+    "2026": 2908
+  },
+  "entered_by_month": {
+    "2023-10": 22,
+    "2023-11": 104,
+    "2023-12": 74,
+    "2024-01": 196,
+    "2024-02": 95,
+    "2024-03": 130,
+    "2024-04": 130,
+    "2024-05": 101,
+    "2024-06": 172,
+    "2024-07": 91,
+    "2024-08": 110,
+    "2024-09": 151,
+    "2024-10": 98,
+    "2024-11": 70,
+    "2024-12": 61,
+    "2025-01": 81,
+    "2025-02": 80,
+    "2025-03": 162,
+    "2025-04": 102,
+    "2025-05": 115,
+    "2025-06": 192,
+    "2025-07": 114,
+    "2025-08": 139,
+    "2025-09": 130,
+    "2025-10": 145,
+    "2025-11": 102,
+    "2025-12": 161,
+    "2026-01": 153,
+    "2026-02": 222,
+    "2026-03": 202,
+    "2026-04": 217,
+    "2026-05": 196,
+    "2026-06": 212,
+    "2026-07": 292,
+    "2026-08": 251,
+    "2026-09": 514,
+    "2026-10": 606,
+    "2026-11": 43
+  },
+  "purpose_null_rows": 18,
+  "issued_comparison": {
+    "source": "2026-11-03 brief stats.json (same-day pull of the companion issued layer)",
+    "issued_rows": 29651,
+    "issued_median_wait_days": 29.0,
+    "issued_mean_wait_days": 64.9,
+    "issued_window": "2023-10-30 to 2026-11-02",
+    "tenant_finish_out_median_wait_days": 119.0
+  },
+  "censoring_note": "Pending ages are ages of a stock observed on one date (2026-11-03), not completed waits: applications that resolve quickly leave the stock, so the stock is selected for slowness and its median age is not comparable to a completed-wait median. Ages are also right-truncated by the layer's rolling three-year entry window (nothing entered before 2023-10-30 is observable). Recent entry cohorts' pending shares are mechanically high because little time has passed; the mature 2024-2025 cohorts are the like-for-like basis."
+}

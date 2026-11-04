@@ -1,0 +1,7 @@
+bucket,permits,share_of_pending
+0-30 days,580,0.0961
+31-90 days,816,0.1352
+91-180 days,693,0.1148
+181-365 days,1082,0.1793
+366-730 days,1391,0.2305
+over 730 days,1474,0.2442

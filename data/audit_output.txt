@@ -1,0 +1,10 @@
+rows in cleaned layer: 6036
+[definition] Date_Issued null on all 6036 rows (layer = not-yet-issued applications per metadata v2.0) PASS
+[10.1.1] Const_Cost zero rows: 2125 and null rows: 1 mapped not-stated (2126 total, excluded from all cost figures); Council_Dist 0-sentinel rows: 0 (none exist in this layer); district unknown total 3 (all null); coords complete, no 0,0 PASS
+[10.1.2] age polarity: 0 rows with negative age (entry after pull date); youngest matched sample: [['Building Residential - New', 1], ['Building Commercial - Rehab', 1], ['Building Commercial - Rehab', 1]]; oldest matched sample: [['Building Residential - Rehab', 1100], ['Building Demolition Permit', 1100], ['Building Demolition Permit', 1100]] PASS
+[10.1.3] over-365 share recomputed 0.4747 on denominator 6036 applications; mature-cohort residual 2928/22654 applications over applications PASS
+[10.1.4] Permit_Type_Description Counter: 29 values, counts sum to 6036, matches stats.json exactly PASS
+[10.1.5] district known 6033 + unknown 3 = 6036; age buckets sum to 6036; stated 3910 + not-stated 2126 = 6036; every cohort row's issued + pending = observed total PASS
+[10.2] controls: (a) Date_Entered carries only UTC hours 5/6 = America/Chicago midnights, so local-date reads and ages are correct; (b) cross-layer partition control: 0 of 6026 pending permit numbers appear in the issued layer's 29600 numbers, matching the metadata's partition of the two layers; (c) window-edge control: 16 rows entered exactly on 2023-10-30, the rolling window's first observable date, shared with the issued layer's window start PASS
+[12.3] effective window: entered 2023-10-30 to 2026-11-02; ages as of 2026-11-03 are right-truncated at 1,100 days by the rolling entry window, and the pending stock is selected for slowness (fast applications leave the stock); recent entry cohorts' pending shares are mechanically high PASS
+ALL SECTION 10 GATES PASS

@@ -1,0 +1,32 @@
+permit_type,pending_n,issued_n,pending_share,issued_share
+Building Residential - New,1945,10954,0.3222,0.3694
+Building Commercial - Rehab,822,3793,0.1362,0.1279
+Building Commercial - New,650,864,0.1077,0.0291
+Building Residential - Addition,567,3167,0.0939,0.1068
+Building Commercial - Tenant Finish Out,468,1573,0.0775,0.0531
+Building Demolition Permit,441,2171,0.0731,0.0732
+Building Residential - Rehab,396,2430,0.0656,0.082
+Building Use & Occupancy,188,389,0.0311,0.0131
+Building Commercial - Addition,87,257,0.0144,0.0087
+Building Sign Permit,82,1989,0.0136,0.0671
+Building Commercial - Shell,59,149,0.0098,0.005
+Building Commercial - Roofing / Siding,51,334,0.0084,0.0113
+Building Residential - Roofing / Siding,49,186,0.0081,0.0063
+Building Commercial - Amend Permit,47,132,0.0078,0.0045
+Building Residential - Tenant Finish Out,34,0,0.0056,0.0
+Building Commercial - Change Contractor,31,183,0.0051,0.0062
+Building Commercial - Fire Damage,26,38,0.0043,0.0013
+Building Tree Removal Permit,23,325,0.0038,0.011
+Building Residential - Amend Permit,17,94,0.0028,0.0032
+Building Commercial - Foundation,10,56,0.0017,0.0019
+Building Commercial - Structural Frame,8,20,0.0013,0.0007
+Building Residential Rehab Storm Damage,7,49,0.0012,0.0017
+Building Residential - Change Contractor,6,409,0.001,0.0138
+Building Residential - Foundation,6,8,0.001,0.0003
+Building Demolition Storm Damage,5,8,0.0008,0.0003
+Building Residential New Storm Damage,5,22,0.0008,0.0007
+Building Residential - Fire Damage,4,33,0.0007,0.0011
+Building Blasting Permit,1,0,0.0002,0.0
+Building Moving Permit,1,3,0.0002,0.0001
+Building Commercial New Storm Damage,0,4,0.0,0.0001
+Building Commercial Rehab Storm Damage,0,11,0.0,0.0004

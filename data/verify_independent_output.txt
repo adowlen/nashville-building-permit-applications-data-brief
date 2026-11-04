@@ -1,0 +1,16 @@
+PASS  server count (live service rolls daily; drift-tolerant)  live now 6036 vs snapshot 6036
+PASS  server count of rows with a Date_Issued (definition control)  0 rows carry an issue date in the live not-yet-issued layer
+PASS  server groupBy type counts reproduce snapshot counts for unchanged types  29/29 types match the snapshot exactly (rolling window shifts the rest)
+PASS  server positive-cost rows, total and max (window rolls; snapshot values must be reachable)  server now n=3910, total 1,896,350,756, max 150,000,000 vs snapshot n=3910, total 1,896,350,756, max 150,000,000
+PASS  pyarrow row count  6036
+PASS  pyarrow Date_Issued all null  0 non-null
+PASS  pyarrow median pending age (raw epoch-day arithmetic)  median 330.0 days
+PASS  pyarrow over-365 count  2865
+PASS  pyarrow max age / window edge  max 1100 days
+PASS  pyarrow stated-cost total on positive rows  sum 1,896,350,756.0 (stats 1,896,350,756)
+PASS  pyarrow stated-cost median on positive rows  150,394
+PASS  pyarrow not-stated rows (zero + null)  2126
+PASS  pyarrow district unknowns (nulls; no zero sentinel)  nulls 3, zeros 0
+PASS  pyarrow ObjectId unique  6036 unique
+
+14/14 checks pass

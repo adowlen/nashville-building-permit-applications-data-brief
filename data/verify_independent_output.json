@@ -1,0 +1,76 @@
+{
+  "checks": [
+    {
+      "name": "server count (live service rolls daily; drift-tolerant)",
+      "pass": true,
+      "detail": "live now 6036 vs snapshot 6036"
+    },
+    {
+      "name": "server count of rows with a Date_Issued (definition control)",
+      "pass": true,
+      "detail": "0 rows carry an issue date in the live not-yet-issued layer"
+    },
+    {
+      "name": "server groupBy type counts reproduce snapshot counts for unchanged types",
+      "pass": true,
+      "detail": "29/29 types match the snapshot exactly (rolling window shifts the rest)"
+    },
+    {
+      "name": "server positive-cost rows, total and max (window rolls; snapshot values must be reachable)",
+      "pass": true,
+      "detail": "server now n=3910, total 1,896,350,756, max 150,000,000 vs snapshot n=3910, total 1,896,350,756, max 150,000,000"
+    },
+    {
+      "name": "pyarrow row count",
+      "pass": true,
+      "detail": "6036"
+    },
+    {
+      "name": "pyarrow Date_Issued all null",
+      "pass": true,
+      "detail": "0 non-null"
+    },
+    {
+      "name": "pyarrow median pending age (raw epoch-day arithmetic)",
+      "pass": true,
+      "detail": "median 330.0 days"
+    },
+    {
+      "name": "pyarrow over-365 count",
+      "pass": true,
+      "detail": "2865"
+    },
+    {
+      "name": "pyarrow max age / window edge",
+      "pass": true,
+      "detail": "max 1100 days"
+    },
+    {
+      "name": "pyarrow stated-cost total on positive rows",
+      "pass": true,
+      "detail": "sum 1,896,350,756.0 (stats 1,896,350,756)"
+    },
+    {
+      "name": "pyarrow stated-cost median on positive rows",
+      "pass": true,
+      "detail": "150,394"
+    },
+    {
+      "name": "pyarrow not-stated rows (zero + null)",
+      "pass": true,
+      "detail": "2126"
+    },
+    {
+      "name": "pyarrow district unknowns (nulls; no zero sentinel)",
+      "pass": true,
+      "detail": "nulls 3, zeros 0"
+    },
+    {
+      "name": "pyarrow ObjectId unique",
+      "pass": true,
+      "detail": "6036 unique"
+    }
+  ],
+  "passed": 14,
+  "total": 14
+}
